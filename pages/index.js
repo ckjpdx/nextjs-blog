@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Date from '../components/date'
 import Head from 'next/head'
+import Hello from './/api/hello'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
@@ -42,6 +43,12 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <h2>API file system test</h2>
+        <Link href={`/api/hello`}>
+          <a>API Test</a>
+        </Link>
       </section>
     </Layout>
   )
