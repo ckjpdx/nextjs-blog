@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <header
+      class="header"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27144%27%20height=%27144%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="Chris Knight Johnson"
+          class="borderCircle"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="/_next/image?url=%2Fimages%2Fprofile.jpg&w=384&q=75"
+          srcset="/_next/image?url=%2Fimages%2Fprofile.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fprofile.jpg&w=384&q=75 2x"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </span>
+      <h1
+        class="heading2Xl"
+      >
+        Chris Knight Johnson
+      </h1>
+    </header>
+    <main>
+      <main>
+        <section
+          class="headingMd"
+        >
+          <h1>
+            Welcome to 
+            <a
+              href="https://nextjs.org"
+            >
+              Next.js!
+            </a>
+          </h1>
+          <p>
+            (This is a sample website - you’ll be building a site like this on
+             
+            <a
+              href="https://nextjs.org/learn"
+            >
+              our Next.js tutorial
+            </a>
+            .)
+          </p>
+        </section>
+        <section
+          class="headingMd padding1px"
+        >
+          <h2
+            class="headingLg"
+          >
+            Blog
+          </h2>
+          <ul
+            class="list"
+          />
+        </section>
+        <section>
+          <h2>
+            API file system test
+          </h2>
+          <a
+            href="/api/hello"
+          >
+            API Test
+          </a>
+        </section>
+      </main>
+    </main>
+  </div>
+</div>
+`;
