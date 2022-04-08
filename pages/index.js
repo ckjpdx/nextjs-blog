@@ -24,15 +24,21 @@ export default function Home({ allPostsData = []}) {
       <div className={indexStyles.border_dotted}>
         <section className={utilStyles.headingMd}>
         <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          This is a Nextjs website!
         </h1>
-          <p>
-            (This is a sample website - you’ll be building a site like this on{' '}
-            <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-          </p>
+        <p>
+          This website demonstrates various aspects of Nextjs and Jest and serves as "living" documentation.
+        </p>
+        <h2>
+          Notes about this page
+        </h2>
+        <ul>
+          <li>All markup and styles outside the dotted line come from the Layout component. It wraps the markup and templates page content.</li>
+          <li></li>
+        </ul>
         </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
+          <h2 className={utilStyles.headingLg}>Blog tutorial</h2>
           <ul className={utilStyles.list}>
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
