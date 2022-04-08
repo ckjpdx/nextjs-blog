@@ -13,6 +13,14 @@ body {
   box-sizing: border-box;
 }
 
+h1 {font-size: 50px;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+h4 {font-size: 25px;}
+h5 {font-size: 20px;}
+h6 {font-size: 15px;}
+p, ul {font-size: 15px;}
+
 a {
   color: #0070f3;
   text-decoration: none;
@@ -21,7 +29,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+code {
+  color: #660;
+  background-color: #CCC;
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 20px;
+}
+.code-variable {
+  color: #800
+}
+.code-value {
+  color: #080
+}
 img {
   max-width: 100%;
   display: block;
