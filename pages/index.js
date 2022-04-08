@@ -5,6 +5,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import indexStyles from '../styles/index.module.css'
 import { getSortedPostsData } from '../lib/posts'
+import * as React from 'react'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -16,6 +17,9 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData = []}) {
+  const MyContext = React.createContext('default value')
+  const useContextValue = React.useContext(MyContext)
+
   return (
     <Layout home>
       <Head>
@@ -58,6 +62,22 @@ export default function Home({ allPostsData = []}) {
           <Link href={`/api/hello`}>
             <a>API Test</a>
           </Link>
+        </section>
+        <section>
+          <h2>
+            React Context
+          </h2>
+          <p><code>{'<'}MyContext.Provider{'>'}</code></p>
+          <MyContext.Provider value='This is MyContext.Provider value prop'>
+          <p><code>{'<'}MyContext.Consumer{'>'}</code></p>
+            <MyContext.Consumer>
+              {value => value}
+            </MyContext.Consumer>
+          <p><code>{'</'}MyContext.Consumer{'>'}</code></p>
+          <p>this is useContextValue</p>
+            <code className='code-value'>{useContextValue}</code>
+          </MyContext.Provider>
+          <p><code>{'</'}MyContext.Provider{'>'}</code></p>
         </section>
       </div>
     </Layout>
