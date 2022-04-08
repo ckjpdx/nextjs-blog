@@ -3,6 +3,7 @@ import Date from '../components/date'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import indexStyles from '../styles/index.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
@@ -20,7 +21,7 @@ export default function Home({ allPostsData = []}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <main>
+      <div className={indexStyles.border_dotted}>
         <section className={utilStyles.headingMd}>
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -52,7 +53,7 @@ export default function Home({ allPostsData = []}) {
             <a>API Test</a>
           </Link>
         </section>
-      </main>
+      </div>
     </Layout>
   )
 }
